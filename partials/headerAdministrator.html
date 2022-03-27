@@ -1,0 +1,63 @@
+<div class="logo">
+    <img src="../../public/assets/images/easy-life_logo.png" alt="Easy Life logo">
+    <h1>Easy <span>Life</span></h1>
+</div>
+
+<!-- Sign up/Log in button -->
+<div class="right-col">
+    <button><div onclick="showOrHideItem('dropdown-items-id')">Nickname</div></button>
+
+    <!-- Dropleft menu -->
+    <div class="dropleft">
+        <div id="svg-id" onclick="showOrHideItem('dropleft-items-id')"><i class="fa-solid fa-bars"></i></div>
+        <div class="dropleft-items" id="dropleft-items-id">
+            <ul>
+                <li><a class="closebtn" onclick="showOrHideItem('dropleft-items-id')">x</a></li>
+                <li class="li-middle"><a href="partials/provisionalUntilBackend/mainPageLoggedUser.html">Home</a></li>
+                <li class="li-middle"><a href="./forumAdmin.html">Forum</a></li>
+                <li class="li-middle"><a href="">Cleaning lifehacks</a></li>
+                <li class="li-middle"><a href="">Food lifehacks</a></li>
+                <li><a href="../../addLifehackPost.html"><button class="add-lifehack-button">+ Add lifehack</button></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Dropdown menu -->
+<div class="dropdown">
+    <div class="dropdown-items" id="dropdown-items-id">
+        <ul>
+            <!-- My activity -->
+            <li class="li-middle"><a href="../../userActivity.html">
+                <i class="fa-solid fa-user"></i>                    
+                My activity
+            </a></li>
+
+            <!-- Liked posts -->
+            <li class="li-middle"><a href="chatsAndLikedPostsForm.html">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                Liked posts
+            </a></li>
+
+            <!-- My chats -->
+            <li class="li-middle"><a href="chatsAndLikedPostsForm.html">
+                <i class="fa-solid fa-comment"></i>
+                My chats
+            </a></li>
+
+            <!-- Settings -->
+            <li class="li-middle"><a href="userSettings.html">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a></li>
+
+            <!-- Log out -->
+            <li class="li-middle"><a href="mainPage.html">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Log out
+            </a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- <script>include("#svg-id", "/lifehack_community/partials/dropleftSVG.html");</script> -->

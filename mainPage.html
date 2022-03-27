@@ -1,0 +1,87 @@
+<!--
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Life</title>
+    <!--Importing Poppins font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Importing Boogaloo font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Poppins:wght@400;700&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--Importing css file-->
+    <link rel="stylesheet" href="./public/assets/css/mainPage/mainPage.css">
+    <link rel="stylesheet" href="./public/assets/css/header/header.css">
+    <link rel="stylesheet" href="./public/assets/css/footer/footer.css">
+    <!-- Importing scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./public/assets/js/tools.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="./public/assets/images/easy-life_logo.png">
+    <!-- Importing font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header: imported with include script-->
+    <header id="header-id"></header>
+
+    <!-- Section 1 -->
+    <section class="section1">
+        <div><h2>Life goes by pretty fast, but it can be easier.</h2></div>        
+    </section>
+
+    <!-- <button onclick="insertNewLifehack()">Create</button>
+    <button onclick="insertCommentInLifehack(7)">Comment</button> -->
+
+    <!-- Hacks-info section: lifehacks -->
+    <section class="hacks-info">
+        <div class="top-buttons">
+            <a href="">All</a>
+            <a class="popular-button" href="">Popular</a>
+            <a href="">New</a>
+        </div>
+
+        <div id="lifehacks"></div>
+
+        <script>loadLifehacksFromJson();</script>
+
+        <div class="moreResults-div">
+            <button id="lifehacks-moreResults" onclick="lifehacksMoreResults()">Show more results</button>
+        </div>
+    </section>
+
+    <!-- Footer: imported with include script-->
+    <footer id="footer-id"></footer>
+
+    <!-- Include scripts -->
+    <script>include("#header-id", "./partials/headerGuest.html");</script>
+    <script>include("#footer-id", "./partials/footer.html");</script>
+</body>
+</html>

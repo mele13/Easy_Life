@@ -1,0 +1,202 @@
+/*
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+*/
+:root {
+  --background-color: #F7EDE2;
+  --text-and-background-color: #FFFF;
+  --link-color: #121212;
+  --lifehack-background: #F28482;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+/* General cases */
+a {
+  text-decoration: none;
+  color: var(--link-color);
+  font-weight: bold;
+}
+
+.right-col, .moreResults-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.right-col .topic-button, .right-col #lifehacks-moreResults, .moreResults-div .topic-button, .moreResults-div #lifehacks-moreResults {
+  font-size: 1.3rem;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+  margin-top: 2%;
+  border-radius: 10px;
+}
+
+/* End of cases */
+/* Start of lifehack-header */
+section.lifehack-header {
+  height: 17vh;
+  background-color: var(--lifehack-background);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.lifehack-header svg {
+  width: 5%;
+  margin-left: 5%;
+}
+
+section.lifehack-header h3 {
+  font-size: 1.5rem;
+  display: inline;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-left: 2%;
+}
+
+section.lifehack-header .right-col {
+  margin-right: 5%;
+}
+
+/* End of lifehack-header */
+/* Start of topics-info */
+section.topics-info {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.topics-info .top-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2rem;
+  margin-top: 1%;
+  height: 7%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+section.topics-info .top-buttons .popular-button {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+section.topics-info #lifehacks .lifehack {
+  background-color: var(--text-and-background-color);
+  border-radius: 10px;
+  margin-top: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+section.topics-info #lifehacks .lifehack .image {
+  width: 15%;
+}
+
+section.topics-info #lifehacks .lifehack .image img {
+  max-width: 100%;
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+section.topics-info #lifehacks .lifehack .text-div {
+  width: 100%;
+}
+
+section.topics-info #lifehacks .lifehack .text-div .lifehack-title {
+  color: var(--link-color);
+  height: 8%;
+}
+
+section.topics-info #lifehacks .lifehack .text-div .lifehack-description, section.topics-info #lifehacks .lifehack .text-div .lifehack-title {
+  width: 74%;
+  margin-left: 2%;
+}
+
+/* End of topics-info */
+/* Start of responsive design */
+@media screen and (max-width: 599px) {
+  section.forum-info .top-buttons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 0.8rem;
+  }
+  section.forum-info .top-buttons a {
+    margin-inline: 10%;
+  }
+  .right-col .topic-button, .right-col #forum-moreResults, .moreResults-div .topic-button, .moreResults-div #forum-moreResults {
+    font-size: 1rem;
+    padding: 0.4rem;
+    margin-top: 2%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  section.forum-info .top-buttons {
+    font-size: 0.7rem;
+  }
+  .right-col .topic-button, .right-col #forum-moreResults, .moreResults-div .topic-button, .moreResults-div #forum-moreResults {
+    font-size: 1rem;
+    padding: 0.4rem;
+    margin-top: 2%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  section.forum-info .top-buttons {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  section.forum-info .top-buttons {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=lifehacks.css.map */

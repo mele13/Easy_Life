@@ -1,0 +1,89 @@
+<!--
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning lifehacks</title>
+    <!--Importing Poppins font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Importing Boogaloo font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Poppins:wght@400;700&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--Importing css file-->
+    <link rel="stylesheet" href="./public/assets/css/lifehacks/lifehacks.css">
+    <link rel="stylesheet" href="./public/assets/css/header/header.css">
+    <link rel="stylesheet" href="./public/assets/css/footer/footer.css">
+    <!-- Importing scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./public/assets/js/tools.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="./public/assets/images/easy-life_logo.png">
+</head>
+<body>
+    <!-- Header: imported with include script-->
+    <header id="header-id"></header>
+
+    <!-- Lifehack header -->
+    <section class="lifehack-header">
+        <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M89.65 52.0668L59.5833 38.6834V32.0834C59.5833 29.5626 57.5208 27.5001 55 27.5001C52.4792 27.5001 50.4167 25.4376 50.4167 22.9168C50.4167 20.3959 52.4792 18.3334 55 18.3334C57.5208 18.3334 59.5833 20.3959 59.5833 22.9168H68.75C68.75 14.4834 61.1417 7.79176 52.4333 9.39592C47.025 10.4043 42.5792 14.7584 41.525 20.1668C40.15 27.3168 44.275 33.6418 50.4167 35.8418V38.7293L20.35 52.1126C16.3167 53.8543 13.75 57.8418 13.75 62.1959V62.2418C13.75 68.3834 18.7 73.3334 24.8417 73.3334H32.0833V100.833H77.9167V73.3334H85.1583C91.3 73.3334 96.25 68.3834 96.25 62.2418V62.1959C96.25 57.8418 93.6833 53.8543 89.65 52.0668ZM85.1583 64.1668H77.9167V59.5834H32.0833V64.1668H24.8417C23.7875 64.1668 22.9167 63.2959 22.9167 62.1959C22.9167 61.4168 23.375 60.7293 24.0625 60.4543L55 46.7043L85.9375 60.4543C86.3441 60.6337 86.6767 60.9473 86.8797 61.3427C87.0826 61.7381 87.1435 62.1913 87.0523 62.6262C86.961 63.0612 86.723 63.4516 86.3782 63.732C86.0334 64.0125 85.6028 64.166 85.1583 64.1668Z" fill="white"/>
+        </svg>
+            
+        <h3>Cleaning lifehacks</h3>
+
+        <a class="right-col" href="./addLifehackPost.html">
+            <button class="topic-button">+ Add topic</button>
+        </a>
+    </section>
+
+    <section class="topics-info">
+        <div class="top-buttons">
+            <a href="">All</a>
+            <a class="popular-button" href="">Popular</a>
+            <a href="">New</a>
+        </div>
+
+        <div id="lifehacks"></div>
+
+        <!-- <script>loadLifehacksFromJson();</script> -->
+
+        <div class="moreResults-div">
+            <button id="lifehacks-moreResults">Show more results</button>
+        </div>
+    </section>
+
+    <!-- Footer: imported with include script-->
+    <footer id="footer-id"></footer>
+
+    <!-- Include scripts -->
+    <script>include("#header-id", "./partials/headerGuest.html");</script>
+    <script>include("#footer-id", "./partials/footer.html");</script>
+</body>
+</html>

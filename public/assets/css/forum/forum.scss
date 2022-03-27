@@ -1,0 +1,141 @@
+/*
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+*/
+:root {
+    --background-color: #F7EDE2;
+    --text-and-background-color: #FFFF;
+    --link-color: #121212;
+    --lifehack-background: #F28482;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* General cases */
+a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-weight: bold;
+}
+
+.right-col, .moreResults-div {
+    display: flex;
+    justify-content: center;
+
+    .topic-button, #forum-moreResults {
+        font-size: 1.3rem;
+        text-align: center;
+        align-items: center;
+        padding: 0.5rem;
+        margin-top: 2%;
+        border-radius: 10px;
+    }
+}
+/* End of cases */
+
+/* Start of lifehack-header */
+section.lifehack-header {
+    height: 17vh;
+    background-color: var(--lifehack-background);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    svg {
+        width: 5%;
+        margin-left: 5%;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        display: inline;
+        flex-grow: 1;
+        margin-left: 2%;
+    }
+
+    .right-col {margin-right: 5%;}
+}
+/* End of lifehack-header */
+
+/* Start of topics-info */
+section.forum-info {
+    .top-buttons {
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+        margin-top: 1%;
+        height: 7%;
+        align-items: end;
+        a {margin-inline: 2%;}
+    }
+}
+/* End of topics-info */
+
+/* Start of responsive design */
+@media screen and (max-width: 599px) {      // <600px || testing: 320x560
+    section.forum-info {
+        .top-buttons {
+            flex-wrap: wrap;
+            font-size: 0.8rem;
+            a {margin-inline: 10%}
+        }
+    }
+
+    .right-col, .moreResults-div {
+        .topic-button, #forum-moreResults {
+            font-size: 1rem;
+            padding: 0.4rem;
+            margin-top: 2%;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) { // 600 - 768 || testing: 640x350    
+    section.forum-info {
+        .top-buttons {font-size: 0.7rem;}
+    }
+
+    .right-col, .moreResults-div {
+        .topic-button, #forum-moreResults {
+            font-size: 1rem;
+            padding: 0.4rem;
+            margin-top: 2%;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) { // 768 - 991 || testing: 800x600
+    section.forum-info {
+        .top-buttons {font-size: 0.8rem;}
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) { // 992 - 1199 || testing: 1024×768
+    section.forum-info {
+        .top-buttons {font-size: 1rem;}
+    }
+}
+// /* End of responsive design */

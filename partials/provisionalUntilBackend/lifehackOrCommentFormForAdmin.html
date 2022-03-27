@@ -1,0 +1,113 @@
+<!--
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Life</title>
+    <!--Importing Poppins font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Importing Boogaloo font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Poppins:wght@400;700&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--Importing css file-->
+    <link rel="stylesheet" href="../../public/assets/css/lifehackAndCommentForm/lifehackAndCommentForm.css">
+    <link rel="stylesheet" href="../../public/assets/css/headerAdministrator/headerAdministrator.css">
+    <link rel="stylesheet" href="../../public/assets/css/footer/footer.css">
+    <!-- Importing scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../../public/assets/js/tools.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="../../public/assets/images/easy-life_logo.png">
+    <!-- Importing font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header: imported with include script-->
+    <header id="header-id"></header>
+
+    <!-- Lifehack or comment section -->
+    <section class="lifehack-comment-section">
+        <!-- Lifehack or comment info -->
+        <div id="individual-lifehack-or-comment"></div>
+
+        <!-- Like and comment button -->
+        <div class="bottom-buttons">
+            <!-- Comment button -->
+
+            <div class="admin-buttons" style=" position: absolute; right: 2%;">
+                <i class="fa-solid fa-pen-to-square" style="background-color: #F6BD60; font-size: 30px; border-radius: 2px; cursor: pointer;"></i>
+                <i class="fa-solid fa-trash" style="background-color: #F6BD60; font-size: 30px; border-radius: 2px; cursor: pointer;"></i>
+            </div>
+            <a href="" class="comment-selection">
+                <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1417 39.025L10.4167 43.75V35.0896C7.8125 32.0479 6.25 28.175 6.25 23.9583C6.25 14.1792 14.6458 6.25 25 6.25C35.3542 6.25 43.75 14.1792 43.75 23.9583C43.75 33.7375 35.3542 41.6667 25 41.6667C21.5375 41.6777 18.1347 40.7659 15.1417 39.025Z" fill="black"/>
+                </svg>
+                <p>Comment</p>
+            </a>
+
+            <!-- Like button -->
+            <a class="like.selection" href="">
+                <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_45_6)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.9993 4.10641C38.8681 -10.1498 73.5431 14.797 24.9993 46.8752C-23.5444 14.8002 11.1306 -10.1498 24.9993 4.10641Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_45_6">
+                    <rect width="50" height="50" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>  
+                <p>Like</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Comments section -->
+    <section class="comments">
+        <div class="comment-info-bar">
+            <p class="total-comments">Total comments:</p>
+            <p class="comment-count">0</p>
+            <!-- Add comment button -->
+            <div class="add-comment-div">
+                <a href="./addCommentToPost.html"><button id="add-comment-button">+ Add comment</button></a>
+            </div>
+        </div>
+
+        <div class="all-comments"></div>
+    </section>
+
+    <!-- Footer: imported with include script-->
+    <footer id="footer-id"></footer>
+
+    <!-- Include scripts -->
+    <script>include("#header-id", "../headerAdministrator.html");</script>
+    <script>include("#footer-id", "../footer.html");</script>
+</body>
+</html>

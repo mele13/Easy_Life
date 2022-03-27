@@ -1,0 +1,94 @@
+<!--
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <!--Importing Poppins font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Importing Boogaloo font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Poppins:wght@400;700&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--Importing css file-->
+    <link rel="stylesheet" href="../../public/assets/css/forum/forum.css">
+    <link rel="stylesheet" href="../../public/assets/css/headerAdministrator/headerAdministrator.css">
+    <link rel="stylesheet" href="../../public/assets/css/footer/footer.css">
+    <!-- Importing scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../../public/assets/js/tools.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="../../public/assets/images/easy-life_logo.png">
+    <!-- Importing font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header: imported with include script-->
+    <header id="header-id"></header>
+
+    <!-- Lifehack header -->
+    <section class="lifehack-header">
+        <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.16406 45.9936C9.16406 33.245 19.4949 22.9165 32.2411 22.9165H50.2536C63.0022 22.9165 73.3307 33.2473 73.3307 45.9936C73.3307 58.7353 62.9999 69.0684 50.2536 69.0684H36.6641V80.2082C36.6641 80.2082 9.16406 74.6394 9.16406 45.9936Z" fill="white"/>
+            <path d="M56.0898 73.0285C59.5245 76.3342 64.1081 78.1778 68.8751 78.171H75.6217V87.0833C75.6217 87.0833 100.83 82.6283 100.83 59.7117C100.83 54.8157 98.8853 50.1203 95.4236 46.6581C91.9618 43.1959 87.2666 41.2506 82.3707 41.25H77.3061C77.7026 42.7533 77.9134 44.3323 77.9134 45.9617C77.9134 59.2396 68.5634 70.3358 56.0898 73.0285Z" fill="white"/>
+        </svg>                      
+            
+        <h3>Forum</h3>
+
+        <div class="right-col">
+            <button class="topic-button">+ Add topic</button>
+        </div>
+    </section>
+
+    <section class="forum-info">
+        <div class="top-buttons">
+            <a href="./introduceYourselfForum.html">Introduce yourself</a>
+            <a href="./savingMoneyForum.html">Saving money</a>
+            <a href="./questionsAndRequestsForum.html">Questions and requests</a>
+            <a href="./otherForum.html">Other</a>
+            <a href="./officialAnnouncementsAdmin.html">Official announcements</a>
+        </div>
+
+        <div id="forum-comments"></div>
+
+        <!-- <script>loadLifehacksFromJson();</script> -->
+
+        <div class="moreResults-div">
+            <button id="forum-moreResults">Show more results</button>
+        </div>
+    </section>
+
+    <!-- Footer: imported with include script-->
+    <footer id="footer-id"></footer>
+
+    <!-- Include scripts -->
+    <script>include("#header-id", "../headerAdministrator.html");</script>
+    <script>include("#footer-id", "../footer.html");</script>
+</body>
+</html>

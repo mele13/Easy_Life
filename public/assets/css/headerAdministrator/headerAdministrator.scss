@@ -1,0 +1,248 @@
+/*
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+*/
+:root {
+    --logo-font: 'Boogaloo', sans-serif;
+    --span-color: #F28482;
+    --button-color: #F6BD60;
+    --text-and-svg-color: #FFFFFF;
+    --dropleft-background-color: #F5CAC3;
+    --transition-dropleft: margin-right .5s;;
+    --overlay-background-color: #8FDDCA;
+    --popup-text-color: #121212;
+}
+
+/* General cases */
+span {color: var(--span-color);}
+
+button {    
+    border: none;
+    background: none;
+    background-color: var(--button-color);
+    border-radius: 15px;
+    color: var(--text-and-svg-color);
+}
+
+.dropleft, button {cursor: pointer;}
+
+ul {list-style: none;}
+a {text-decoration: none;}
+
+input{
+    border: none;
+    border-radius: 5px;
+}
+
+input:focus{outline: none!important;}
+/* End of general cases */
+
+/* Start of header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -1.5%;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-top: 0em;
+
+    .logo {
+        display: flex;
+        align-items: center;
+
+        img {width: 8%;}
+    
+        h1 {
+            display: inline; // Avoids new line
+            font-family: var(--logo-font);
+            font-size: 3rem;
+            margin-left: 2%;
+        }
+    }
+    
+    .right-col {
+        display: flex;
+        align-items: center;        
+        width: 6%;
+        a {padding: 0.5rem;}
+        margin-right: -49%;
+
+        button {
+            padding: 10%;
+            font-size: 1.5rem;
+            margin-right: 18%;
+        }
+
+        .dropleft {
+            width: 27%;
+            height: 100%;
+            transition: var(--transition-dropleft);
+            i {font-size: 3rem;}
+
+            #svg-id {transition: var(--transition-dropleft);}
+
+            .dropleft-items {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                height: 100%;
+                width: 17%;
+                right: 0;
+                background-color: var(--dropleft-background-color);
+                overflow-x: hidden;
+                transition: 0.5s;
+                
+                ul  {
+                    .li-middle {
+                        display: flex;
+                        justify-content: center;
+                        line-height: 2.5em;
+                    }
+
+                    li a {
+                        font-weight: lighter;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // Logged User dropdown
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        display: absolute;
+        left: -11%;
+
+        .dropdown-items {
+            background-image: url('../../images/dropdown_background.png');
+            background-size: 100% 100%;
+            display: none;
+            position: absolute;
+
+            a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            ul {
+                margin-left: -17%;
+            }
+        }        
+    }
+}
+/* End of header */
+
+/* Start of responsive design */
+@media screen and (max-width: 599px) {      // <600px || testing: 320x560
+    header {
+        .logo img {width: 8%;}
+        .logo h1 {
+            font-size: 2rem;
+            margin-left: 11%!important;
+        }
+        .right-col {
+            margin-right: 34%!important;
+            button {font-size: 1.2rem!important;}
+            .dropleft #svg-id i {font-size: 1.8rem!important;}
+            .dropleft {
+                .dropleft-items {width: 30%;}
+                ul {width: 70%!important;}
+                ul .li-middle {line-height: 1.8em!important;}
+                ul li a {font-size: 0.8rem!important;}
+            }
+        }
+        .dropdown {left: -46%;}
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) { // 600 - 768 || testing: 640x350    
+    header {
+        .logo img {width: 8%;}
+        .logo h1 {
+            font-size: 2rem;
+            margin-left: 1%;
+        }
+        .right-col {
+            margin-right: -23%!important;
+            button {font-size: 1.2rem!important;}
+            .dropleft #svg-id i {font-size: 1.8rem!important;}
+            .dropleft {
+                .dropleft-items {width: 30%;}
+                ul {width: 70%!important;}
+                ul .li-middle {line-height: 1.8em!important;}
+                ul li a {font-size: 0.8rem!important;}
+            }
+        }
+        .dropdown {left: -26%;}
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) { // 768 - 991 || testing: 800x600
+    header {
+        .logo img {width: 8%;}
+        .logo h1 {
+            font-size: 2rem;
+            margin-left: 1%;
+        }
+        .right-col {
+            margin-right: -41%!important;
+            button {font-size: 1.2rem!important;}
+            .dropleft #svg-id i {font-size: 1.8rem!important;}
+            .dropleft {
+                .dropleft-items {width: 30%;}
+                ul {width: 70%!important;}
+                ul .li-middle {line-height: 1.8em!important;}
+                ul li a {font-size: 0.8rem!important;}
+            }
+        }
+        .dropdown {left: -21%;}
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) { // 992 - 1199 || testing: 1024×768
+    header {
+        .logo img {width: 8%;}
+        .logo h1 {
+            font-size: 2rem;
+            margin-left: 1%;
+        }
+        .right-col {
+            margin-right: -41%!important;
+            button {font-size: 1.2rem!important;}
+            .dropleft #svg-id i {font-size: 1.8rem!important;}
+            .dropleft {
+                .dropleft-items {width: 30%;}
+                ul {width: 70%!important;}
+                ul .li-middle {line-height: 1.8em!important;}
+                ul li a {font-size: 0.8rem!important;}
+            }
+        }
+        .dropdown {left: -21%;}
+    }
+}
+// /* End of responsive design */

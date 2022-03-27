@@ -1,0 +1,201 @@
+{
+  "lifehacks": [
+    {
+      "id": 0,
+      "image_path": "./public/assets/images/household_hacks/keep-a-card-like-this.jpg",
+      "title": "This card should save your life",
+      "description": "Having a card with your medical info inside your wallet might save your life in case of emergency.\nMake sure to keep the card in a highly visible place or else it won’t work.",
+      "link": null,
+      "likes": 0,
+      "createdAt": "22/03/2022",
+      "comments": [
+        {
+          "title": "My first comment",
+          "description": "My first comment description",
+          "media": null,
+          "createdAt": "23/03/2022"
+        },
+        {
+          "title": "My second comment",
+          "description": "My second comment description",
+          "media": null,
+          "createdAt": "24/03/2022"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "image_path": "./public/assets/images/household_hacks/garden_organizer.jpg",
+      "title": "My second lifehack",
+      "description": "My second lifehack description",
+      "link": null,
+      "likes": 100,
+      "createdAt": "23/02/2022",
+      "comments": [
+        {
+          "title": "My first comment",
+          "description": "My first comment description",
+          "media": null,
+          "createdAt": "24/02/2022"
+        },
+        {
+          "title": "My second comment",
+          "description": "My second comment description",
+          "media": null,
+          "createdAt": "25/02/2022"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "image_path": null,
+      "title": "My third lifehack",
+      "description": "My third lifehack description",
+      "link": null,
+      "likes": 100,
+      "createdAt": "23/02/2022",
+      "comments": [
+        {
+          "title": "My first comment",
+          "description": "My first comment description",
+          "media": null,
+          "createdAt": "24/02/2022"
+        },
+        {
+          "title": "My second comment",
+          "description": "My second comment description",
+          "media": null,
+          "createdAt": "25/02/2022"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "image_path": "./public/assets/images/household_hacks/top_lifehack.jpeg",
+      "title": "My fourth lifehack",
+      "description": "My fourth lifehack description",
+      "link": null,
+      "likes": 100,
+      "createdAt": "23/02/2022",
+      "comments": [
+        {
+          "title": "My first comment",
+          "description": "My first comment description",
+          "media": null,
+          "createdAt": "24/02/2022"
+        },
+        {
+          "title": "My second comment",
+          "description": "My second comment description",
+          "media": null,
+          "createdAt": "25/02/2022"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "image_path": "./public/assets/images/household_hacks/all_lifehacks.jpg",
+      "title": "My fith lifehack",
+      "description": "My fith lifehack description",
+      "link": null,
+      "likes": 100,
+      "createdAt": "23/02/2022",
+      "comments": [
+        {
+          "title": "My first comment",
+          "description": "My first comment description",
+          "media": null,
+          "createdAt": "24/02/2022"
+        },
+        {
+          "title": "My second comment",
+          "description": "My second comment description",
+          "media": null,
+          "createdAt": "25/02/2022"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "image_path": null,
+      "title": "bbbbbbbbbbbbbb",
+      "description": "My second lifehack description",
+      "link": null,
+      "likes": 100,
+      "createdAt": "23/02/2022",
+      "comments": [
+        {
+          "title": "My first comment",
+          "description": "My first comment description",
+          "media": null,
+          "createdAt": "24/02/2022"
+        },
+        {
+          "title": "My second comment",
+          "description": "My second comment description",
+          "media": null,
+          "createdAt": "25/02/2022"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "image_path": null,
+      "title": "bbbbbbbbbbbbbb",
+      "description": "My second lifehack description",
+      "link": null,
+      "likes": 100,
+      "createdAt": "23/02/2022",
+      "comments": [
+        {
+          "title": "My first comment",
+          "description": "My first comment description",
+          "media": null,
+          "createdAt": "24/02/2022"
+        },
+        {
+          "title": "My second comment",
+          "description": "My second comment description",
+          "media": null,
+          "createdAt": "25/02/2022"
+        }
+      ]
+    },
+    {
+      "image_path": "C:\\fakepath\\garden_organizer.jpg",
+      "title": "Tu titulo",
+      "description": "Tu descripción",
+      "link": "https://www.comocreartuweb.com",
+      "likes": "0",
+      "createdAt": "27/2/2022",
+      "id": 7
+    },
+    {
+      "image_path": "",
+      "title": "",
+      "description": "",
+      "link": "",
+      "likes": "0",
+      "createdAt": "27/2/2022",
+      "id": 8
+    },
+    {
+      "image_path": "C:\\fakepath\\garden_organizer.jpg",
+      "title": "Prueba",
+      "description": "Pruebestia",
+      "link": "",
+      "likes": "0",
+      "createdAt": "27/2/2022",
+      "id": 9
+    },
+    {
+      "image_path": "",
+      "title": "asdfa",
+      "description": "asdfa",
+      "link": "",
+      "likes": "0",
+      "createdAt": "27/2/2022",
+      "id": 10
+    }
+  ]
+}

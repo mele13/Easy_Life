@@ -1,0 +1,88 @@
+<!--
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New comment</title>
+    <!--Importing Poppins font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Importing Boogaloo font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Poppins:wght@400;700&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--Importing css file-->
+    <link rel="stylesheet" href="./public/assets/css/addPost/addPost.css">
+    <link rel="stylesheet" href="./public/assets/css/header/header.css">
+    <!-- Importing scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./public/assets/js/tools.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="./public/assets/images/easy-life_logo.png">
+</head>
+<body>
+    <!-- Header: imported with include script-->
+    <header id="header-id"></header>
+
+    <!-- Input section: title, description, link, media & topic -->
+    <section class="input-section">
+        <h3>Your comment</h3>
+        <!-- Title -->
+        <div id="title"></div>
+
+        <!-- Description -->
+        <div class="description">
+            <div id="svg-id"></div>
+            <p>Description</p>  
+            <textarea name="description-input" cols="30" rows="5"></textarea>         
+            <!-- <input class="descriptoin-input" type="text"> -->
+        </div>
+
+        <!-- Media -->
+        <div class="media">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.75 30C25.1307 30 26.25 28.8807 26.25 27.5C26.25 26.1193 25.1307 25 23.75 25C22.3693 25 21.25 26.1193 21.25 27.5C21.25 28.8807 22.3693 30 23.75 30Z" fill="black"/>
+                <path d="M33.75 20H29.65L28.9713 17.9588C28.8055 17.4608 28.4871 17.0277 28.0612 16.7209C27.6353 16.4142 27.1236 16.2494 26.5987 16.25H20.9013C20.3762 16.2495 19.8644 16.4144 19.4385 16.7214C19.0126 17.0284 18.6943 17.4618 18.5287 17.96L17.85 20H13.75C13.0872 20.0007 12.4517 20.2643 11.983 20.733C11.5143 21.2017 11.2507 21.8372 11.25 22.5V33.75C11.2507 34.4128 11.5143 35.0483 11.983 35.517C12.4517 35.9857 13.0872 36.2493 13.75 36.25H33.75C34.4128 36.2493 35.0483 35.9857 35.517 35.517C35.9857 35.0483 36.2493 34.4128 36.25 33.75V22.5C36.2493 21.8372 35.9857 21.2017 35.517 20.733C35.0483 20.2643 34.4128 20.0007 33.75 20ZM23.75 32.5C22.7611 32.5 21.7944 32.2068 20.9721 31.6573C20.1499 31.1079 19.509 30.327 19.1306 29.4134C18.7522 28.4998 18.6531 27.4945 18.8461 26.5245C19.039 25.5546 19.5152 24.6637 20.2145 23.9645C20.9137 23.2652 21.8046 22.789 22.7745 22.5961C23.7445 22.4031 24.7498 22.5022 25.6634 22.8806C26.577 23.259 27.3579 23.8999 27.9073 24.7222C28.4568 25.5444 28.75 26.5111 28.75 27.5C28.7483 28.8256 28.221 30.0964 27.2837 31.0337C26.3464 31.971 25.0756 32.4983 23.75 32.5Z" fill="black"/>
+                <path d="M33.75 13.75H36.25V16.25H33.75V13.75ZM33.75 8.75H36.25V11.25H33.75V8.75ZM33.75 3.75H36.25V6.25H33.75V3.75ZM28.75 3.75H31.25V6.25H28.75V3.75ZM23.75 3.75H26.25V6.25H23.75V3.75ZM18.75 3.75H21.25V6.25H18.75V3.75ZM13.75 3.75H16.25V6.25H13.75V3.75ZM8.75 3.75H11.25V6.25H8.75V3.75ZM3.75 3.75H6.25V6.25H3.75V3.75ZM3.75 8.75H6.25V11.25H3.75V8.75ZM3.75 13.75H6.25V16.25H3.75V13.75ZM3.75 18.75H6.25V21.25H3.75V18.75ZM3.75 23.75H6.25V26.25H3.75V23.75ZM3.75 28.75H6.25V31.25H3.75V28.75ZM3.75 33.75H6.25V36.25H3.75V33.75Z" fill="black"/>
+            </svg>                
+            <p>Want to add media?</p>
+            <input type="file" accept="video/*, image/*">
+        </div>
+
+        <!-- Continue button -->
+        <a class="continue-div" href="./lifehackAndCommentForm.html">
+            <button id="continue-button">Continue</button>
+        </a>
+    </section>
+
+    <!-- Include scripts -->
+    <script>include("#header-id", "./partials/headerGuest.html");</script>
+    <script>include("#title", "./partials/addPostT.html");</script>
+    <script>include("#svg-id", "./partials/newPostDescriptionSVG.html");</script>
+</body>
+</html>

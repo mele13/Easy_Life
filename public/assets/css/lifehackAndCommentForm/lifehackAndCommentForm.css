@@ -1,0 +1,148 @@
+/*
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+*/
+:root {
+  --background-color: #F7EDE2;
+  --logo-font: 'Boogaloo', sans-serif;
+  --text-and-background-color: #FFFFFF;
+  --comment-info-bar-color: #F28482;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+/* General cases */
+a {
+  text-decoration: none;
+  color: var(--link-color);
+  font-weight: bold;
+}
+
+a svg {
+  width: 50px;
+  height: 50px;
+}
+
+a p {
+  margin-left: 2%;
+}
+
+/* End of cases */
+/* Start of lifehack or comment section */
+section.lifehack-comment-section {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.lifehack-comment-section #individual-lifehack-or-comment {
+  background-color: var(--text-and-background-color);
+  border-radius: 10px;
+}
+
+section.lifehack-comment-section .bottom-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.lifehack-comment-section .bottom-buttons a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+}
+
+section.lifehack-comment-section .bottom-buttons .comment-selection {
+  margin-right: 5%;
+}
+
+/* End of lifehack or comment section */
+/* Start of comments section */
+section.comments {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.comments .comment-info-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 50%;
+  background-color: var(--comment-info-bar-color);
+  padding: 1% 0%;
+  border-radius: 10px;
+}
+
+section.comments .comment-info-bar p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 1%;
+}
+
+section.comments .comment-info-bar .comment-count {
+  width: 74%;
+}
+
+section.comments .comment-info-bar .add-comment-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.comments .comment-info-bar .add-comment-div a {
+  padding: 0.5rem;
+}
+
+section.comments .comment-info-bar .add-comment-div #add-comment-button {
+  font-size: 1.3rem;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+  margin-top: 2%;
+  border-radius: 10px;
+}
+
+section.comments .all-comments {
+  background-color: var(--text-and-background-color);
+  border-radius: 10px;
+}
+
+/* End of comments section */
+/*# sourceMappingURL=lifehackAndCommentForm.css.map */

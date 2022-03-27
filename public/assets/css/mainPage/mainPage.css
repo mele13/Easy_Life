@@ -1,0 +1,173 @@
+/*
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+*/
+:root {
+  --background-color: #F7EDE2;
+  --logo-font: 'Boogaloo', sans-serif;
+  --text-and-background-color: #FFFFFF;
+  --link-color: #121212;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+/* General cases */
+a {
+  text-decoration: none;
+  color: var(--link-color);
+  font-weight: bold;
+}
+
+/* End of cases */
+/* Start of section1 */
+section.section1 {
+  height: 87vh;
+  background-image: url("../../images/landing_background.jpg");
+  background-size: 100% 100%;
+}
+
+section.section1 div {
+  position: absolute;
+  bottom: 0;
+  height: 57%;
+}
+
+section.section1 div h2 {
+  color: var(--text-and-background-color);
+  text-align: center;
+  width: 77%;
+  margin-left: 20%;
+  font-size: 2rem;
+}
+
+/* End of section1 */
+/* Start of hacks-info: hacklifes */
+section.hacks-info {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.hacks-info .top-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2rem;
+  margin-top: 1%;
+  height: 7%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+section.hacks-info .top-buttons .popular-button {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+section.hacks-info #lifehacks .lifehack {
+  background-color: var(--text-and-background-color);
+  border-radius: 10px;
+  margin-top: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+section.hacks-info #lifehacks .lifehack .image {
+  width: 15%;
+}
+
+section.hacks-info #lifehacks .lifehack .image img {
+  max-width: 100%;
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+section.hacks-info #lifehacks .lifehack .text-div {
+  width: 100%;
+}
+
+section.hacks-info #lifehacks .lifehack .text-div .lifehack-title {
+  color: var(--link-color);
+  height: 8%;
+}
+
+section.hacks-info #lifehacks .lifehack .text-div .lifehack-description, section.hacks-info #lifehacks .lifehack .text-div .lifehack-title {
+  width: 74%;
+  margin-left: 2%;
+}
+
+section.hacks-info .moreResults-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.hacks-info .moreResults-div #lifehacks-moreResults {
+  font-size: 1.3rem;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+  margin-top: 2%;
+  border-radius: 10px;
+}
+
+/* End of hacks-info */
+/* Start of responsive design */
+@media screen and (max-width: 599px) {
+  section.hacks-info #lifehacks .lifehack .image {
+    width: 100%;
+  }
+  section.hacks-info #lifehacks .lifehack .text-div .lifehack-title {
+    width: 100%;
+    height: 14%;
+  }
+  section.hacks-info #lifehacks .lifehack .text-div .lifehack-description {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  section.hacks-info #lifehacks .lifehack .image {
+    width: 40%;
+  }
+  section.hacks-info #lifehacks .lifehack .text-div .lifehack-title {
+    height: 15%;
+  }
+}
+/*# sourceMappingURL=mainPage.css.map */

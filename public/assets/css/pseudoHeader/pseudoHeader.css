@@ -1,0 +1,41 @@
+:root {
+  --button-color: #F6BD60;
+  --text-and-svg-color: #FFFFFF;
+}
+
+/* General cases */
+button {
+  border: none;
+  background: none;
+  background-color: var(--button-color);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+button, a {
+  color: var(--text-and-svg-color);
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* End of general cases */
+.right-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.right-col button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+/*# sourceMappingURL=pseudoHeader.css.map */

@@ -1,0 +1,335 @@
+/*
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+*/
+:root {
+  --logo-font: 'Boogaloo', sans-serif;
+  --span-color: #F28482;
+  --button-color: #F6BD60;
+  --text-and-svg-color: #FFFFFF;
+  --dropleft-background-color: #F5CAC3;
+  --transition-dropleft: margin-right .5s;
+  --overlay-background-color: #8FDDCA;
+  --popup-text-color: #121212;
+}
+
+/* General cases */
+span {
+  color: var(--span-color);
+}
+
+button {
+  border: none;
+  background: none;
+  background-color: var(--button-color);
+  border-radius: 15px;
+  color: var(--text-and-svg-color);
+}
+
+.dropleft, button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+/* End of general cases */
+/* Start of header */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -1.5%;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-top: 0em;
+}
+
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo img {
+  width: 8%;
+}
+
+header .logo h1 {
+  display: inline;
+  font-family: var(--logo-font);
+  font-size: 3rem;
+  margin-left: 2%;
+}
+
+header .right-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 6%;
+  margin-right: -49%;
+}
+
+header .right-col a {
+  padding: 0.5rem;
+}
+
+header .right-col button {
+  padding: 10%;
+  font-size: 1.5rem;
+  margin-right: 18%;
+}
+
+header .right-col .dropleft {
+  width: 27%;
+  height: 100%;
+  -webkit-transition: var(--transition-dropleft);
+  transition: var(--transition-dropleft);
+}
+
+header .right-col .dropleft i {
+  font-size: 3rem;
+}
+
+header .right-col .dropleft #svg-id {
+  -webkit-transition: var(--transition-dropleft);
+  transition: var(--transition-dropleft);
+}
+
+header .right-col .dropleft .dropleft-items {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  height: 100%;
+  width: 17%;
+  right: 0;
+  background-color: var(--dropleft-background-color);
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .right-col .dropleft .dropleft-items ul .li-middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 2.5em;
+}
+
+header .right-col .dropleft .dropleft-items ul li a {
+  font-weight: lighter;
+  font-size: 1.3rem;
+}
+
+header .dropdown {
+  position: relative;
+  display: inline-block;
+  display: absolute;
+  left: -11%;
+}
+
+header .dropdown .dropdown-items {
+  background-image: url("../../images/dropdown_background.png");
+  background-size: 100% 100%;
+  display: none;
+  position: absolute;
+}
+
+header .dropdown .dropdown-items a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+header .dropdown .dropdown-items ul {
+  margin-left: -17%;
+}
+
+/* End of header */
+/* Start of responsive design */
+@media screen and (max-width: 599px) {
+  header .logo img {
+    width: 8%;
+  }
+  header .logo h1 {
+    font-size: 2rem;
+    margin-left: 11% !important;
+  }
+  header .right-col {
+    margin-right: 34% !important;
+  }
+  header .right-col button {
+    font-size: 1.2rem !important;
+  }
+  header .right-col .dropleft #svg-id i {
+    font-size: 1.8rem !important;
+  }
+  header .right-col .dropleft .dropleft-items {
+    width: 30%;
+  }
+  header .right-col .dropleft ul {
+    width: 70% !important;
+  }
+  header .right-col .dropleft ul .li-middle {
+    line-height: 1.8em !important;
+  }
+  header .right-col .dropleft ul li a {
+    font-size: 0.8rem !important;
+  }
+  header .dropdown {
+    left: -46%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  header .logo img {
+    width: 8%;
+  }
+  header .logo h1 {
+    font-size: 2rem;
+    margin-left: 1%;
+  }
+  header .right-col {
+    margin-right: -23% !important;
+  }
+  header .right-col button {
+    font-size: 1.2rem !important;
+  }
+  header .right-col .dropleft #svg-id i {
+    font-size: 1.8rem !important;
+  }
+  header .right-col .dropleft .dropleft-items {
+    width: 30%;
+  }
+  header .right-col .dropleft ul {
+    width: 70% !important;
+  }
+  header .right-col .dropleft ul .li-middle {
+    line-height: 1.8em !important;
+  }
+  header .right-col .dropleft ul li a {
+    font-size: 0.8rem !important;
+  }
+  header .dropdown {
+    left: -26%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  header .logo img {
+    width: 8%;
+  }
+  header .logo h1 {
+    font-size: 2rem;
+    margin-left: 1%;
+  }
+  header .right-col {
+    margin-right: -41% !important;
+  }
+  header .right-col button {
+    font-size: 1.2rem !important;
+  }
+  header .right-col .dropleft #svg-id i {
+    font-size: 1.8rem !important;
+  }
+  header .right-col .dropleft .dropleft-items {
+    width: 30%;
+  }
+  header .right-col .dropleft ul {
+    width: 70% !important;
+  }
+  header .right-col .dropleft ul .li-middle {
+    line-height: 1.8em !important;
+  }
+  header .right-col .dropleft ul li a {
+    font-size: 0.8rem !important;
+  }
+  header .dropdown {
+    left: -21%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  header .logo img {
+    width: 8%;
+  }
+  header .logo h1 {
+    font-size: 2rem;
+    margin-left: 1%;
+  }
+  header .right-col {
+    margin-right: -41% !important;
+  }
+  header .right-col button {
+    font-size: 1.2rem !important;
+  }
+  header .right-col .dropleft #svg-id i {
+    font-size: 1.8rem !important;
+  }
+  header .right-col .dropleft .dropleft-items {
+    width: 30%;
+  }
+  header .right-col .dropleft ul {
+    width: 70% !important;
+  }
+  header .right-col .dropleft ul .li-middle {
+    line-height: 1.8em !important;
+  }
+  header .right-col .dropleft ul li a {
+    font-size: 0.8rem !important;
+  }
+  header .dropdown {
+    left: -21%;
+  }
+}
+/*# sourceMappingURL=headerLoggedUser.css.map */

@@ -1,0 +1,175 @@
+/*
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+*/
+:root {
+    --background-color: #F7EDE2;
+    --lifehack-background: #F28482;
+    --text-and-background-color: #FFFFFF;
+    --link-color: #121212;
+    --eliminate-button-color: #CC2222;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* General cases */
+a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-weight: bold;
+}
+
+h5 {color: var(--text-and-background-color);}
+
+button {
+    font-size: 1.3rem;
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin-top: 2%;
+    border-radius: 10px;
+}
+/* End of cases */
+
+/* Start of lifehack-header */
+section.lifehack-header {
+    height: 17vh;
+    background-color: var(--lifehack-background);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    h3 {
+        font-size: 2.2rem;
+        display: inline;
+        margin-left: 2%;
+        width: 93%;
+    }
+
+    h5 {
+        margin-top: -3%;
+        margin-left: 2%;
+        font-weight: lighter;
+        font-size: 1.2rem;
+    }
+}
+/* End of lifehack-header */
+
+/* Start of forum-info */
+section.forum-info {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .top-content {
+        // text-align: center;
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+        margin-top: 1%;
+        height: 7%;
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+
+    .info-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 1%;
+
+        .info {
+            background-color: var(--text-and-background-color);
+            border-radius: 10px;
+            width: 48%;
+
+            .settings-options {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+
+                .column {
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1;
+                    gap: 8%;
+
+                    p {
+                        margin-left: 15%;
+                        font-size: 1.2rem;
+                    }
+
+                    button {margin-right: 15%;}
+                    .eliminatebtn {background-color: var(--eliminate-button-color);}
+                }                
+            }
+        }
+    }
+}
+/* End of forum-info */
+
+/* Start of responsive design */
+@media screen and (max-width: 599px) {      // <600px || testing: 320x560
+    section.lifehack-header {
+        h3 {
+            margin-top: 0%;
+            font-size: 1.5rem;
+        }
+        h5 {
+            margin-top: -13%;
+            font-size: 0.8rem;
+        }
+    }
+
+    section.forum-info {
+        .info-container .info {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) { // 600 - 768 || testing: 640x350    
+    section.lifehack-header {
+        h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+        h5 {
+            margin-top: -4%;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) { // 768 - 991 || testing: 800x600
+    section.lifehack-header {
+        h3 {font-size: 1.8rem;}
+        h5 {
+            margin-top: -4%;
+            font-size: 1rem;
+        }
+    }
+}
+// /* End of responsive design */

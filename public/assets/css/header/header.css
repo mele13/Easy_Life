@@ -1,0 +1,670 @@
+/*
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+*/
+:root {
+  --logo-font: 'Boogaloo', sans-serif;
+  --span-color: #F28482;
+  --button-color: #F6BD60;
+  --text-and-svg-color: #FFFFFF;
+  --dropleft-background-color: #F5CAC3;
+  --transition-dropleft: margin-right .5s;
+  --overlay-background-color: #8FDDCA;
+  --popup-text-color: #121212;
+}
+
+/* General cases */
+span {
+  color: var(--span-color);
+}
+
+button {
+  border: none;
+  background: none;
+  background-color: var(--button-color);
+  border-radius: 15px;
+  color: var(--text-and-svg-color);
+}
+
+.selector-popup button, .right-col button, .log-in-popup button, .sign-up-popup button {
+  text-align: center;
+  font-size: 1.3rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+  margin-right: 10%;
+  height: 50%;
+  width: 100%;
+}
+
+.dropleft, button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+/* End of general cases */
+/* Start of header */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -1.5%;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-top: 0em;
+}
+
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo img {
+  width: 8%;
+}
+
+header .logo h1 {
+  display: inline;
+  font-family: var(--logo-font);
+  font-size: 3rem;
+  margin-left: 2%;
+}
+
+header .right-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 16%;
+}
+
+header .right-col a {
+  padding: 0.5rem;
+}
+
+header .right-col .dropleft {
+  width: 27%;
+  height: 100%;
+  -webkit-transition: var(--transition-dropleft);
+  transition: var(--transition-dropleft);
+}
+
+header .right-col .dropleft #svg-id {
+  -webkit-transition: var(--transition-dropleft);
+  transition: var(--transition-dropleft);
+}
+
+header .right-col .dropleft .dropleft-items {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  height: 100%;
+  width: 17%;
+  right: 0;
+  background-color: var(--dropleft-background-color);
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .right-col .dropleft .dropleft-items ul .li-middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 2.5em;
+}
+
+header .right-col .dropleft .dropleft-items ul li a {
+  font-weight: lighter;
+  font-size: 1.3rem;
+}
+
+header .sign-log-overlay {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+header .sign-log-overlay .selector-popup {
+  margin: 16% auto;
+  padding: 7% 1%;
+  background: var(--overlay-background-color);
+  border-radius: 10px;
+  width: 30%;
+  position: relative;
+  -webkit-transition: all 5s ease-in-out;
+  transition: all 5s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header .sign-log-overlay .selector-popup a {
+  padding: 0.5rem;
+}
+
+header .sign-log-overlay .selector-popup p {
+  font-size: 2rem;
+}
+
+header .sign-log-overlay .selector-popup h3 {
+  color: var(--popup-text-color);
+  font-size: 3rem;
+}
+
+header .sign-log-overlay .selector-popup a, header .sign-log-overlay .selector-popup h3, header .sign-log-overlay .selector-popup p, header .sign-log-overlay .selector-popup input {
+  position: absolute;
+}
+
+header .sign-log-overlay .selector-popup .closebtn {
+  right: 6%;
+  top: -20%;
+}
+
+header .sign-log-overlay .selector-popup .title {
+  top: 6%;
+  right: 16.5%;
+}
+
+header .sign-log-overlay .selector-popup .log-in-button {
+  top: 62%;
+  left: 30%;
+  z-index: 10;
+}
+
+header .sign-log-overlay .selector-popup .sign-up-button {
+  top: 62%;
+  right: 30%;
+  z-index: 10;
+}
+
+header .sign-log-overlay:target, header .log-in-overlay:target, header .sign-up-overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+header .sign-up-overlay, header .log-in-overlay {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+header .sign-up-overlay .sign-up-popup, header .sign-up-overlay .log-in-popup, header .log-in-overlay .sign-up-popup, header .log-in-overlay .log-in-popup {
+  margin: 6.3% auto;
+  padding: 2% 1%;
+  background: var(--overlay-background-color);
+  border-radius: 10px;
+  width: 30%;
+  position: relative;
+  -webkit-transition: all 5s ease-in-out;
+  transition: all 5s ease-in-out;
+}
+
+header .sign-up-overlay .sign-up-popup h3, header .sign-up-overlay .log-in-popup h3, header .log-in-overlay .sign-up-popup h3, header .log-in-overlay .log-in-popup h3 {
+  color: var(--popup-text-color);
+}
+
+header .sign-up-overlay .sign-up-popup h1, header .sign-up-overlay .log-in-popup h1, header .log-in-overlay .sign-up-popup h1, header .log-in-overlay .log-in-popup h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+header .sign-up-overlay .sign-up-popup .closebtn, header .sign-up-overlay .log-in-popup .closebtn, header .log-in-overlay .sign-up-popup .closebtn, header .log-in-overlay .log-in-popup .closebtn {
+  float: right;
+  margin-top: -12%;
+  font-size: 2rem;
+}
+
+header .sign-up-overlay .sign-up-popup .form-group, header .sign-up-overlay .log-in-popup .form-group, header .log-in-overlay .sign-up-popup .form-group, header .log-in-overlay .log-in-popup .form-group {
+  font-size: 2rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+header .sign-up-overlay .sign-up-popup .form-group p, header .sign-up-overlay .log-in-popup .form-group p, header .log-in-overlay .sign-up-popup .form-group p, header .log-in-overlay .log-in-popup .form-group p {
+  font-size: 1rem;
+}
+
+header .sign-up-overlay .sign-up-popup .form-group input, header .sign-up-overlay .log-in-popup .form-group input, header .log-in-overlay .sign-up-popup .form-group input, header .log-in-overlay .log-in-popup .form-group input {
+  width: 97%;
+  line-height: 2rem;
+  font-size: 1.4rem;
+}
+
+header .sign-up-overlay .sign-up-popup .form-group .continuebtn, header .sign-up-overlay .log-in-popup .form-group .continuebtn, header .log-in-overlay .sign-up-popup .form-group .continuebtn, header .log-in-overlay .log-in-popup .form-group .continuebtn {
+  cursor: pointer;
+  width: 24%;
+  background-color: var(--button-color);
+  color: var(--text-and-svg-color);
+  margin-left: 37%;
+  margin-top: 5%;
+}
+
+header .sign-up-overlay .sign-up-popup .form-group .corporatebtn, header .sign-up-overlay .log-in-popup .form-group .corporatebtn, header .log-in-overlay .sign-up-popup .form-group .corporatebtn, header .log-in-overlay .log-in-popup .form-group .corporatebtn {
+  cursor: pointer;
+  background-color: transparent;
+  width: 30%;
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-left: 34%;
+}
+
+/* End of header */
+/* Start of responsive design */
+@media screen and (max-width: 599px) {
+  .selector-popup button, .right-col button, .log-in-popup button, .sign-up-popup button {
+    font-size: 0.8rem;
+  }
+  header {
+    margin-right: 4.5em;
+  }
+  header .logo img {
+    width: 11%;
+  }
+  header .logo h1 {
+    font-size: 2rem;
+    margin-left: 1%;
+  }
+  header .right-col {
+    width: -1%;
+  }
+  header .sign-log-overlay .selector-popup {
+    margin: 25% auto;
+    padding: 40% 25%;
+    width: 30%;
+  }
+  header .sign-log-overlay .selector-popup p {
+    font-size: 1.3rem;
+  }
+  header .sign-log-overlay .selector-popup h3 {
+    font-size: 1.8rem;
+    margin-left: 25%;
+  }
+  header .sign-log-overlay .selector-popup .log-in-button {
+    top: 52%;
+    left: 36.2%;
+  }
+  header .sign-log-overlay .selector-popup .sign-up-button {
+    top: 68%;
+    right: 36%;
+  }
+  header .sign-up-overlay .sign-up-popup, header .sign-up-overlay .log-in-popup, header .log-in-overlay .sign-up-popup, header .log-in-overlay .log-in-popup {
+    width: 50%;
+  }
+  header .sign-up-overlay .sign-up-popup h1, header .sign-up-overlay .log-in-popup h1, header .log-in-overlay .sign-up-popup h1, header .log-in-overlay .log-in-popup h1 {
+    font-size: 1.8rem;
+  }
+  header .sign-up-overlay .sign-up-popup .closebtn, header .sign-up-overlay .log-in-popup .closebtn, header .log-in-overlay .sign-up-popup .closebtn, header .log-in-overlay .log-in-popup .closebtn {
+    font-size: 1rem;
+  }
+  header .sign-up-overlay .sign-up-popup .form-group, header .sign-up-overlay .log-in-popup .form-group, header .log-in-overlay .sign-up-popup .form-group, header .log-in-overlay .log-in-popup .form-group {
+    font-size: 1rem;
+  }
+  header .sign-up-overlay .sign-up-popup .form-group p, header .sign-up-overlay .log-in-popup .form-group p, header .log-in-overlay .sign-up-popup .form-group p, header .log-in-overlay .log-in-popup .form-group p {
+    font-size: 0.7rem;
+  }
+  header .sign-up-overlay .sign-up-popup .form-group input, header .sign-up-overlay .log-in-popup .form-group input, header .log-in-overlay .sign-up-popup .form-group input, header .log-in-overlay .log-in-popup .form-group input {
+    line-height: 1rem;
+    font-size: 1rem;
+  }
+  header .sign-up-overlay .sign-up-popup .form-group .continuebtn, header .sign-up-overlay .log-in-popup .form-group .continuebtn, header .log-in-overlay .sign-up-popup .form-group .continuebtn, header .log-in-overlay .log-in-popup .form-group .continuebtn {
+    width: 51%;
+    margin-left: 20%;
+    font-size: 0.8rem;
+  }
+  header .sign-up-overlay .sign-up-popup .form-group .corporatebtn, header .sign-up-overlay .log-in-popup .form-group .corporatebtn, header .log-in-overlay .sign-up-popup .form-group .corporatebtn, header .log-in-overlay .log-in-popup .form-group .corporatebtn {
+    width: 50%;
+    margin-left: 20%;
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .selector-popup button, .right-col button, .log-in-popup button, .sign-up-popup button {
+    font-size: 1.2rem;
+  }
+  header {
+    margin-right: 4.5em;
+  }
+  header .logo img {
+    width: 8%;
+  }
+  header .logo h1 {
+    font-size: 2rem;
+    margin-left: 1%;
+  }
+  header .right-col {
+    width: -1%;
+  }
+  header .sign-log-overlay .selector-popup {
+    margin: 15% auto;
+    padding: 20% 5%;
+    width: 30%;
+  }
+  header .sign-log-overlay .selector-popup p {
+    font-size: 1.3rem;
+  }
+  header .sign-log-overlay .selector-popup h3 {
+    font-size: 1.8rem;
+    margin-left: 25%;
+  }
+  header .sign-log-overlay .selector-popup .log-in-button {
+    top: 50%;
+    left: 32.2%;
+  }
+  header .sign-log-overlay .selector-popup .sign-up-button {
+    top: 68%;
+    right: 33%;
+  }
+  header .sign-up-overlay .sign-up-popup, header .sign-up-overlay .log-in-popup, header .log-in-overlay .sign-up-popup, header .log-in-overlay .log-in-popup {
+    width: 50%;
+  }
+  header .sign-up-overlay .sign-up-popup h1, header .sign-up-overlay .log-in-popup h1, header .log-in-overlay .sign-up-popup h1, header .log-in-overlay .log-in-popup h1 {
+    font-size: 1.5rem;
+  }
+  header .sign-up-overlay .sign-up-popup .closebtn, header .sign-up-overlay .log-in-popup .closebtn, header .log-in-overlay .sign-up-popup .closebtn, header .log-in-overlay .log-in-popup .closebtn {
+    font-size: 0.8rem;
+  }
+  header .sign-up-overlay .sign-up-popup .form-group, header .sign-up-overlay .log-in-popup .form-group, header .log-in-overlay .sign-up-popup .form-group, header .log-in-overlay .log-in-popup .form-group {
+    font-size: 0.8rem;
+  }
+  header .sign-up-overlay .sign-up-popup .form-group p, header .sign-up-overlay .log-in-popup .form-group p, header .log-in-overlay .sign-up-popup .form-group p, header .log-in-overlay .log-in-popup .form-group p {
+    font-size: 0.6rem;
+  }
+  header .sign-up-overlay .sign-up-popup .form-group input, header .sign-up-overlay .log-in-popup .form-group input, header .log-in-overlay .sign-up-popup .form-group input, header .log-in-overlay .log-in-popup .form-group input {
+    line-height: 0.8rem;
+    font-size: 0.8rem;
+  }
+  header .sign-up-overlay .sign-up-popup .form-group .continuebtn, header .sign-up-overlay .log-in-popup .form-group .continuebtn, header .log-in-overlay .sign-up-popup .form-group .continuebtn, header .log-in-overlay .log-in-popup .form-group .continuebtn {
+    width: 51%;
+    margin-left: 20%;
+    font-size: 0.6rem;
+  }
+  header .sign-up-overlay .sign-up-popup .form-group .corporatebtn, header .sign-up-overlay .log-in-popup .form-group .corporatebtn, header .log-in-overlay .sign-up-popup .form-group .corporatebtn, header .log-in-overlay .log-in-popup .form-group .corporatebtn {
+    width: 50%;
+    margin-left: 20%;
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .selector-popup button, .right-col button, .log-in-popup button, .sign-up-popup button {
+    font-size: 1.2rem;
+  }
+  header {
+    margin-right: 4.5em;
+  }
+  header .logo img {
+    width: 8%;
+  }
+  header .logo h1 {
+    font-size: 2rem;
+    margin-left: 1%;
+  }
+  header .right-col {
+    width: -1%;
+  }
+  header .sign-log-overlay .selector-popup {
+    margin: 15% auto;
+    padding: 20% 5%;
+    width: 30%;
+  }
+  header .sign-log-overlay .selector-popup p {
+    font-size: 1.3rem;
+  }
+  header .sign-log-overlay .selector-popup h3 {
+    font-size: 1.8rem;
+    margin-left: 25%;
+  }
+  header .sign-log-overlay .selector-popup .log-in-button {
+    top: 50%;
+    left: 32.2%;
+  }
+  header .sign-log-overlay .selector-popup .sign-up-button {
+    top: 68%;
+    right: 33%;
+  }
+  header .sign-up-overlay .sign-up-popup, header .sign-up-overlay .log-in-popup, header .log-in-overlay .sign-up-popup, header .log-in-overlay .log-in-popup {
+    width: 50%;
+  }
+  header .sign-up-overlay .sign-up-popup h1, header .sign-up-overlay .log-in-popup h1, header .log-in-overlay .sign-up-popup h1, header .log-in-overlay .log-in-popup h1 {
+    font-size: 1.5rem;
+  }
+  header .sign-up-overlay .sign-up-popup .closebtn, header .sign-up-overlay .log-in-popup .closebtn, header .log-in-overlay .sign-up-popup .closebtn, header .log-in-overlay .log-in-popup .closebtn {
+    font-size: 0.8rem;
+  }
+  header .sign-up-overlay .sign-up-popup .form-group, header .sign-up-overlay .log-in-popup .form-group, header .log-in-overlay .sign-up-popup .form-group, header .log-in-overlay .log-in-popup .form-group {
+    font-size: 0.8rem;
+  }
+  header .sign-up-overlay .sign-up-popup .form-group p, header .sign-up-overlay .log-in-popup .form-group p, header .log-in-overlay .sign-up-popup .form-group p, header .log-in-overlay .log-in-popup .form-group p {
+    font-size: 0.6rem;
+  }
+  header .sign-up-overlay .sign-up-popup .form-group input, header .sign-up-overlay .log-in-popup .form-group input, header .log-in-overlay .sign-up-popup .form-group input, header .log-in-overlay .log-in-popup .form-group input {
+    line-height: 0.8rem;
+    font-size: 0.8rem;
+  }
+  header .sign-up-overlay .sign-up-popup .form-group .continuebtn, header .sign-up-overlay .log-in-popup .form-group .continuebtn, header .log-in-overlay .sign-up-popup .form-group .continuebtn, header .log-in-overlay .log-in-popup .form-group .continuebtn {
+    width: 51%;
+    margin-left: 20%;
+    font-size: 0.6rem;
+  }
+  header .sign-up-overlay .sign-up-popup .form-group .corporatebtn, header .sign-up-overlay .log-in-popup .form-group .corporatebtn, header .log-in-overlay .sign-up-popup .form-group .corporatebtn, header .log-in-overlay .log-in-popup .form-group .corporatebtn {
+    width: 50%;
+    margin-left: 20%;
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .selector-popup button, .right-col button, .log-in-popup button, .sign-up-popup button {
+    font-size: 1.2rem;
+  }
+  header {
+    margin-right: 4.5em;
+  }
+  header .logo img {
+    width: 8%;
+  }
+  header .logo h1 {
+    font-size: 2rem;
+    margin-left: 1%;
+  }
+  header .right-col {
+    width: -1%;
+  }
+  header .sign-log-overlay .selector-popup {
+    margin: 15% auto;
+    padding: 20% 5%;
+    width: 30%;
+  }
+  header .sign-log-overlay .selector-popup p {
+    font-size: 1.3rem;
+  }
+  header .sign-log-overlay .selector-popup h3 {
+    font-size: 1.8rem;
+    margin-left: 25%;
+  }
+  header .sign-log-overlay .selector-popup .log-in-button {
+    top: 50%;
+    left: 36.2%;
+  }
+  header .sign-log-overlay .selector-popup .sign-up-button {
+    top: 68%;
+    right: 41%;
+  }
+  header .sign-up-overlay .sign-up-popup, header .sign-up-overlay .log-in-popup, header .log-in-overlay .sign-up-popup, header .log-in-overlay .log-in-popup {
+    width: 50%;
+  }
+  header .sign-up-overlay .sign-up-popup h1, header .sign-up-overlay .log-in-popup h1, header .log-in-overlay .sign-up-popup h1, header .log-in-overlay .log-in-popup h1 {
+    font-size: 1.5rem;
+  }
+  header .sign-up-overlay .sign-up-popup .closebtn, header .sign-up-overlay .log-in-popup .closebtn, header .log-in-overlay .sign-up-popup .closebtn, header .log-in-overlay .log-in-popup .closebtn {
+    font-size: 0.8rem;
+  }
+  header .sign-up-overlay .sign-up-popup .form-group, header .sign-up-overlay .log-in-popup .form-group, header .log-in-overlay .sign-up-popup .form-group, header .log-in-overlay .log-in-popup .form-group {
+    font-size: 0.8rem;
+  }
+  header .sign-up-overlay .sign-up-popup .form-group p, header .sign-up-overlay .log-in-popup .form-group p, header .log-in-overlay .sign-up-popup .form-group p, header .log-in-overlay .log-in-popup .form-group p {
+    font-size: 0.6rem;
+  }
+  header .sign-up-overlay .sign-up-popup .form-group input, header .sign-up-overlay .log-in-popup .form-group input, header .log-in-overlay .sign-up-popup .form-group input, header .log-in-overlay .log-in-popup .form-group input {
+    line-height: 0.8rem;
+    font-size: 0.8rem;
+  }
+  header .sign-up-overlay .sign-up-popup .form-group .continuebtn, header .sign-up-overlay .log-in-popup .form-group .continuebtn, header .log-in-overlay .sign-up-popup .form-group .continuebtn, header .log-in-overlay .log-in-popup .form-group .continuebtn {
+    width: 51%;
+    margin-left: 20%;
+    font-size: 0.6rem;
+  }
+  header .sign-up-overlay .sign-up-popup .form-group .corporatebtn, header .sign-up-overlay .log-in-popup .form-group .corporatebtn, header .log-in-overlay .sign-up-popup .form-group .corporatebtn, header .log-in-overlay .log-in-popup .form-group .corporatebtn {
+    width: 50%;
+    margin-left: 20%;
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  .selector-popup button, .right-col button, .log-in-popup button, .sign-up-popup button {
+    font-size: 1.5rem;
+  }
+  header {
+    margin-right: 4.5em;
+  }
+  header .logo img {
+    width: 8%;
+  }
+  header .logo h1 {
+    font-size: 3rem;
+    margin-left: 1%;
+  }
+  header .right-col {
+    width: -1%;
+  }
+  header .sign-log-overlay .selector-popup {
+    margin: 15% auto;
+    padding: 20% 5%;
+    width: 30%;
+  }
+  header .sign-log-overlay .selector-popup p {
+    font-size: 1.6rem;
+  }
+  header .sign-log-overlay .selector-popup h3 {
+    font-size: 2.3rem;
+    margin-left: 25%;
+  }
+  header .sign-log-overlay .selector-popup .log-in-button {
+    top: 50%;
+    left: 40.2%;
+  }
+  header .sign-log-overlay .selector-popup .sign-up-button {
+    top: 68%;
+    right: 33%;
+  }
+  header .sign-up-overlay .sign-up-popup, header .sign-up-overlay .log-in-popup, header .log-in-overlay .sign-up-popup, header .log-in-overlay .log-in-popup {
+    width: 50%;
+  }
+  header .sign-up-overlay .sign-up-popup h1, header .sign-up-overlay .log-in-popup h1, header .log-in-overlay .sign-up-popup h1, header .log-in-overlay .log-in-popup h1 {
+    font-size: 2rem;
+  }
+  header .sign-up-overlay .sign-up-popup .closebtn, header .sign-up-overlay .log-in-popup .closebtn, header .log-in-overlay .sign-up-popup .closebtn, header .log-in-overlay .log-in-popup .closebtn {
+    font-size: 0.8rem;
+  }
+  header .sign-up-overlay .sign-up-popup .form-group, header .sign-up-overlay .log-in-popup .form-group, header .log-in-overlay .sign-up-popup .form-group, header .log-in-overlay .log-in-popup .form-group {
+    font-size: 1.2rem;
+  }
+  header .sign-up-overlay .sign-up-popup .form-group p, header .sign-up-overlay .log-in-popup .form-group p, header .log-in-overlay .sign-up-popup .form-group p, header .log-in-overlay .log-in-popup .form-group p {
+    font-size: 1rem;
+  }
+  header .sign-up-overlay .sign-up-popup .form-group input, header .sign-up-overlay .log-in-popup .form-group input, header .log-in-overlay .sign-up-popup .form-group input, header .log-in-overlay .log-in-popup .form-group input {
+    line-height: 1.2rem;
+    font-size: 1.2rem;
+  }
+  header .sign-up-overlay .sign-up-popup .form-group .continuebtn, header .sign-up-overlay .log-in-popup .form-group .continuebtn, header .log-in-overlay .sign-up-popup .form-group .continuebtn, header .log-in-overlay .log-in-popup .form-group .continuebtn {
+    width: 51%;
+    margin-left: 20%;
+    font-size: 1rem;
+  }
+  header .sign-up-overlay .sign-up-popup .form-group .corporatebtn, header .sign-up-overlay .log-in-popup .form-group .corporatebtn, header .log-in-overlay .sign-up-popup .form-group .corporatebtn, header .log-in-overlay .log-in-popup .form-group .corporatebtn {
+    width: 50%;
+    margin-left: 20%;
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=header.css.map */

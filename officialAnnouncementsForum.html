@@ -1,0 +1,83 @@
+<!--
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum - Official announcements</title>
+    <!--Importing Poppins font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Importing Boogaloo font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Poppins:wght@400;700&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--Importing css file-->
+    <link rel="stylesheet" href="./public/assets/css/forum/forum.css">
+    <link rel="stylesheet" href="./public/assets/css/header/header.css">
+    <link rel="stylesheet" href="./public/assets/css/footer/footer.css">
+    <!-- Importing scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./public/assets/js/tools.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="./public/assets/images/easy-life_logo.png">
+</head>
+<body>
+    <!-- Header: imported with include script-->
+    <header id="header-id"></header>
+
+    <!-- Lifehack header -->
+    <section class="lifehack-header">
+        <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M94.7247 38.6654C86.0127 18.3924 71.9987 2.97044 64.9092 5.84694C52.8697 10.7474 72.0812 34.2489 12.9507 58.2784C7.84117 60.3629 6.54867 68.6624 8.68817 73.6344C10.8222 78.5954 17.8072 83.5399 22.9167 81.4664C23.8022 81.1034 27.0472 80.0584 27.0472 80.0584C30.6937 84.9589 34.5107 82.0549 35.8692 85.1624L42.2382 99.7924C43.4427 102.553 46.1707 105.111 48.1507 104.357L59.4257 100.073C61.9997 99.0939 62.6102 96.7949 61.8237 94.9909C60.9767 93.0384 57.5007 92.4664 56.5052 90.1894C55.5152 87.9234 52.2757 80.6304 51.3462 78.3314C50.0812 75.2074 52.7707 72.6609 56.6812 72.2594C83.5982 69.4434 88.6307 86.0754 97.7937 82.3464C104.872 79.4589 103.431 58.9219 94.7247 38.6654ZM91.6942 71.5334C90.1157 72.1659 79.5227 63.8224 72.7577 48.0649C65.9872 32.3184 66.8397 17.9249 68.4127 17.2814C69.9857 16.6489 80.3202 26.7249 87.0852 42.4714C93.8557 58.2179 93.2672 70.8899 91.6942 71.5334Z" fill="white"/>
+        </svg>
+        <h3>Official announcements</h3>
+    </section>
+
+    <section class="forum-info">
+        <div class="top-buttons">
+            <a href="">All</a>
+            <a href="">New</a>
+        </div>
+
+        <div id="forum-comments"></div>
+
+        <!-- <script>loadLifehacksFromJson();</script> -->
+
+        <div class="moreResults-div">
+            <button id="forum-moreResults">Show more results</button>
+        </div>
+    </section>
+
+    <!-- Footer: imported with include script-->
+    <footer id="footer-id"></footer>
+
+    <!-- Include scripts -->
+    <script>include("#header-id", "./partials/headerGuest.html");</script>
+    <script>include("#footer-id", "./partials/footer.html");</script>
+</body>
+</html>

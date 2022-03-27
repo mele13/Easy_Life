@@ -1,0 +1,231 @@
+/*
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+*/
+:root {
+  --background-color: #F7EDE2;
+  --text-and-background-color: #FFF;
+  --link-color: #121212;
+  --lifehack-background: #F28482;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+/* General cases */
+a {
+  text-decoration: none;
+  color: var(--link-color);
+  font-weight: bold;
+}
+
+h5 {
+  color: var(--text-and-background-color);
+}
+
+.posts p, .statistics h4 {
+  display: inline;
+}
+
+/* End of cases */
+/* Start of lifehack-header */
+section.lifehack-header {
+  height: 17vh;
+  background-color: var(--lifehack-background);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.lifehack-header h3 {
+  font-size: 2.2rem;
+  display: inline;
+  margin-left: 2%;
+  width: 93%;
+}
+
+section.lifehack-header h5 {
+  margin-top: -3%;
+  margin-left: 2%;
+  font-weight: lighter;
+  font-size: 1.2rem;
+}
+
+/* End of lifehack-header */
+/* Start of forum-info */
+section.forum-info {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.forum-info .top-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2rem;
+  margin-top: 1%;
+  height: 7%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+section.forum-info .top-buttons a {
+  margin-inline: 2%;
+}
+
+section.forum-info .column {
+  margin-top: 1%;
+}
+
+section.forum-info .left-column {
+  width: 27.75%;
+  background-color: var(--text-and-background-color);
+  border-radius: 10px;
+  float: left;
+}
+
+section.forum-info .left-column #forum-statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.forum-info .left-column #forum-statistics .statistics, section.forum-info .left-column #forum-statistics .posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20%;
+}
+
+section.forum-info .left-column #forum-statistics .statistics svg, section.forum-info .left-column #forum-statistics .posts svg {
+  margin-right: 2%;
+}
+
+section.forum-info .left-column #forum-statistics .statistics {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 0;
+}
+
+section.forum-info .right-column {
+  width: 50%;
+  float: right;
+}
+
+section.forum-info .right-column .forum-comments {
+  background-color: var(--text-and-background-color);
+}
+
+/* End of topics-info */
+/* Start of responsive design */
+@media screen and (max-width: 599px) {
+  section.lifehack-header h3 {
+    font-size: 1.8rem;
+    width: 0%;
+  }
+  section.lifehack-header h5 {
+    font-size: 0.8rem;
+    margin-top: 20%;
+    margin-left: 0;
+  }
+  section.forum-info .top-buttons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 0.8rem;
+  }
+  section.forum-info .top-buttons a {
+    margin-inline: 5%;
+  }
+  section.forum-info .left-column {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  section.lifehack-header h3 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    width: 0%;
+  }
+  section.lifehack-header h5 {
+    font-size: 0.8rem;
+    margin-top: 5%;
+    margin-left: 0;
+  }
+  section.forum-info .top-buttons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 0.8rem;
+  }
+  section.forum-info .top-buttons a {
+    margin-inline: 5%;
+  }
+  section.forum-info .left-column {
+    width: 89%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  section.lifehack-header h3 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    width: 0%;
+  }
+  section.lifehack-header h5 {
+    font-size: 0.8rem;
+    margin-top: 5%;
+    margin-left: 0;
+  }
+  section.forum-info .top-buttons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 0.8rem;
+  }
+  section.forum-info .top-buttons a {
+    margin-inline: 5%;
+  }
+  section.forum-info .left-column {
+    width: 89%;
+  }
+}
+/*# sourceMappingURL=userActivity.css.map */

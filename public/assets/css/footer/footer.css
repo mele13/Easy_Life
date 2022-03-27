@@ -1,0 +1,250 @@
+/*
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+*/
+:root {
+  --footer-background: #F28482;
+  --text-color: #FFF;
+}
+
+/* General cases */
+h2, h3, .footer-description p {
+  color: var(--text-color);
+}
+
+.bottom-buttons p, section#footer-content .close-footer {
+  cursor: pointer;
+}
+
+/* End of general cases */
+/* Start of footer */
+footer {
+  margin-bottom: 0em;
+}
+
+footer .bottom-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .bottom-buttons .footer-button {
+  margin-left: 33%;
+}
+
+footer section#footer-content {
+  -webkit-transition: margin-bottom .5s;
+  transition: margin-bottom .5s;
+  display: none;
+  margin-top: 2%;
+}
+
+footer section#footer-content .footer-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("../../images/footer_rectangle.png");
+  background-size: 100% 100%;
+  width: 38.4%;
+}
+
+footer section#footer-content .footer-title h2 {
+  font-size: 2.5rem;
+  margin-left: 1.5em;
+}
+
+footer section#footer-content .footer-title h3 {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  margin-left: 50%;
+}
+
+footer section#footer-content .footer-description {
+  background-color: var(--footer-background);
+  height: 52vh;
+  margin-top: -3%;
+}
+
+footer section#footer-content .footer-description h3 {
+  font-weight: lighter;
+  font-size: 1.8rem;
+  margin-left: 2.1em;
+}
+
+footer section#footer-content .footer-description p {
+  margin-top: -1.5%;
+  font-size: 1.2rem;
+  margin-left: 3.2em;
+}
+
+footer section#footer-content .footer-description h3, footer section#footer-content .footer-description p {
+  margin-right: 1.5em;
+}
+
+footer section#footer-content .footer-space {
+  width: 100%;
+  height: 10%;
+}
+
+footer section#footer-content .designed-by {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--text-color);
+}
+
+/* End of footer */
+/* Start of responsive design */
+@media screen and (max-width: 599px) {
+  section#footer-content .footer-title {
+    background-image: url("../../images/footer_rectangle.png");
+    background-size: 100% 100%;
+    width: 66% !important;
+  }
+  section#footer-content .footer-title h2 {
+    font-size: 1.5rem !important;
+  }
+  section#footer-content .footer-title h3 {
+    font-size: 1rem !important;
+    margin-left: 9% !important;
+  }
+  section#footer-content .footer-description {
+    margin-top: -11% !important;
+    height: 100% !important;
+  }
+  section#footer-content .footer-description h3 {
+    font-size: 1rem !important;
+  }
+  section#footer-content .footer-description p {
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  section#footer-content .footer-title {
+    background-image: url("../../images/footer_rectangle.png");
+    background-size: 100% 100%;
+    width: 66% !important;
+  }
+  section#footer-content .footer-title h2 {
+    font-size: 1.5rem !important;
+  }
+  section#footer-content .footer-title h3 {
+    font-size: 1rem !important;
+    margin-left: 9% !important;
+  }
+  section#footer-content .footer-description {
+    margin-top: -6% !important;
+    height: 100% !important;
+  }
+  section#footer-content .footer-description h3 {
+    font-size: 1rem !important;
+  }
+  section#footer-content .footer-description p {
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  section#footer-content .footer-title {
+    background-image: url("../../images/footer_rectangle.png");
+    background-size: 100% 100%;
+    width: 66% !important;
+  }
+  section#footer-content .footer-title h2 {
+    font-size: 1.5rem !important;
+  }
+  section#footer-content .footer-title h3 {
+    font-size: 1rem !important;
+    margin-left: 50% !important;
+  }
+  section#footer-content .footer-description {
+    margin-top: -4.2% !important;
+    height: 100% !important;
+  }
+  section#footer-content .footer-description h3 {
+    font-size: 1rem !important;
+  }
+  section#footer-content .footer-description p {
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  section#footer-content .footer-title {
+    background-image: url("../../images/footer_rectangle.png");
+    background-size: 100% 100%;
+    width: 80% !important;
+  }
+  section#footer-content .footer-title h2 {
+    font-size: 2rem !important;
+  }
+  section#footer-content .footer-title h3 {
+    font-size: 1.5rem !important;
+    margin-left: 50% !important;
+  }
+  section#footer-content .footer-description {
+    margin-top: -5% !important;
+    height: 100% !important;
+  }
+  section#footer-content .footer-description h3 {
+    font-size: 1.5rem !important;
+  }
+  section#footer-content .footer-description p {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+  section#footer-content .footer-title {
+    background-image: url("../../images/footer_rectangle.png");
+    background-size: 100% 100%;
+    width: 80% !important;
+  }
+  section#footer-content .footer-title h2 {
+    font-size: 2rem !important;
+  }
+  section#footer-content .footer-title h3 {
+    font-size: 1.5rem !important;
+    margin-left: 50% !important;
+  }
+  section#footer-content .footer-description {
+    margin-top: -4% !important;
+    height: 100% !important;
+  }
+  section#footer-content .footer-description h3 {
+    font-size: 1.5rem !important;
+  }
+  section#footer-content .footer-description p {
+    font-size: 1.5rem !important;
+  }
+}
+/*# sourceMappingURL=footer.css.map */
