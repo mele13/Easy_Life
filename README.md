@@ -12,6 +12,7 @@ Welcome to the Easy Life project repository! This is a responsive web applicatio
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
+- [Disclaimer](#disclaimer)
 
 ## Introduction
 
