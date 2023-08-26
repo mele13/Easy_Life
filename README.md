@@ -17,6 +17,8 @@ Welcome to the Easy Life project repository! This is a responsive web applicatio
 
 Easy Life is a platform where users can share their own lifehacks to simplify tasks and learn from others. The application is designed to be simple and easy to navigate. It features menus, headers, and a footer that provide intuitive navigation through the site's content. The project is responsive, ensuring optimal viewing on various devices without the need for extensive media queries.
 
+![ezgif com-gif-maker](https://github.com/mele13/Easy_Life/assets/87198060/28664388-acc1-4ee6-982d-76e620659535)
+
 ## Features
 
 - **Lifehack Sharing**: Users can post their own lifehacks to help others simplify tasks.
